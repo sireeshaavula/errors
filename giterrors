@@ -4,8 +4,14 @@ fatal: Could not read from remote repository.
                                                                                                                                                                                                 
 Please make sure you have the correct access rights  
 
-#Using Https
+#Using Https 
 
 
 remote: Repository not found.
 fatal: repository 'https://github.com/NEC-mobile-pos/new_mPOS_Source.git/' not found
+
+#using https with existing user
+
+fatal: unable to access 'https://github.com/NEC-mobile-pos/new_mPOS_Source.git/'                                                                                                                
+: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443                                                                                                                        
+
