@@ -22,3 +22,9 @@ fatal: unable to access 'https://github.com/sireeshaavula/simple-java-maven-app.
 
 go to windows credentials in control panel and remove the github credencials.
 
+
+# Jenkins build error
+
+ERROR: Failed to parse POMs
+java.io.IOException: Cannot run program "/usr/lib/jvm/jdk-1.8.0-openjdk.x86_64/bin/java" (in directory "/var/lib/jenkins/workspace/test_maven"): error=2, No such file or directory
+
