@@ -28,3 +28,9 @@ go to windows credentials in control panel and remove the github credencials.
 ERROR: Failed to parse POMs
 java.io.IOException: Cannot run program "/usr/lib/jvm/jdk-1.8.0-openjdk.x86_64/bin/java" (in directory "/var/lib/jenkins/workspace/test_maven"): error=2, No such file or directory
 
+#mavan installation
+
+sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+sudo yum install -y apache-maven
+mvn --version
