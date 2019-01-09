@@ -28,9 +28,20 @@ go to windows credentials in control panel and remove the github credencials.
 ERROR: Failed to parse POMs
 java.io.IOException: Cannot run program "/usr/lib/jvm/jdk-1.8.0-openjdk.x86_64/bin/java" (in directory "/var/lib/jenkins/workspace/test_maven"): error=2, No such file or directory
 
-#mavan installation
+java home setup problem
+mention the java path details export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-0.42.amzn1.x86_64"
 
-sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
-sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
-sudo yum install -y apache-maven
-mvn --version
+PATH=$JAVA_HOME/bin:$PATH in "vi ~/.bash_profile" file and run this cmd source ~/.bash_profile. so that it will add perminantly with out restart the server.
+
+# buil error 
+
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+
+yum install openjdk-8-jdk
+yum search java | grep openjdk
+yum install java-1.8.0-openjdk-headless.x86_64
+yum install java-1.8.0-openjdk-devel.x86_64
+update-alternatives --config java
+update-alternatives --config javac
