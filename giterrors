@@ -45,3 +45,8 @@ yum install java-1.8.0-openjdk-headless.x86_64
 yum install java-1.8.0-openjdk-devel.x86_64
 update-alternatives --config java
 update-alternatives --config javac
+
+sudo yum install java-1.8.0
+sudo yum remove java-1.7.0-openjdk
+
+
