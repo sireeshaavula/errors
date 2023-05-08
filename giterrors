@@ -49,4 +49,20 @@ update-alternatives --config javac
 sudo yum install java-1.8.0
 sudo yum remove java-1.7.0-openjdk
 
+to list the files in s3
+aws s3 ls s3://soawily-tenxeng-tenxengsilver/asis/
+
+to cpoy the file
+aws s3 cp krb5_DEVAD.conf s3://soawily-tenxeng-tenxengsilver/asis/
+
+to remove the folders with files
+aws s3 rm s3://soawily-tenxeng-tenxengsilver/asis/ --recursive
+
+it will create the new folder and copy the fils
+aws s3 cp /root/asis s3://soawily-tenxeng-tenxengsilver/asis/ --recursive
+
+
+
+
+
 
